@@ -9,20 +9,18 @@ public class DestroyOutOfBounds : MonoBehaviour
 
     private void Update()
     {
+        // уничтожение предмета по позиции topBound
         if (transform.position.z > topBound)
         {
             Destroy(gameObject);
         }
+        // уничтожение предмета по позиции lowerBound для вертикальных префабов
         else if (transform.position.z < lowerBound)
         {
-            Debug.Log("Game Over");
+            Debug.Log("Game Over Top");
             Destroy(gameObject);
-        }
 
-        //if (transform.position.z > topBound)
-        //{
-        //    Debug.Log("Game Over");
-        //    Destroy(gameObject);
-        //}
+
+        }
     }
 }

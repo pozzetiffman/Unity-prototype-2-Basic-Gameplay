@@ -8,6 +8,7 @@ public class MoveForward : MonoBehaviour
 
     void Update()
     {
+        // перемещение обекта в перед 
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 }

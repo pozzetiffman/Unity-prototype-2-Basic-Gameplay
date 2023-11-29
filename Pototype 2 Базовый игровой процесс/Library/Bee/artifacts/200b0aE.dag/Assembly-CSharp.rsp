@@ -356,9 +356,15 @@
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.10f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.10f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Skript/DestroyOutOfBounds.cs"
+"Assets/Skript/DestroyOutOfBoundsHorizontalLeft.cs"
+"Assets/Skript/DestroyOutOfBoundsHorizontalRight.cs"
 "Assets/Skript/DetectCollisions.cs"
+"Assets/Skript/DetectCollisionsPlayer.cs"
+"Assets/Skript/HorizontalSpawnManagerLeft.cs"
+"Assets/Skript/HorizontalSpawnManagerRight.cs"
 "Assets/Skript/MoveForward.cs"
 "Assets/Skript/PlayerController.cs"
+"Assets/Skript/PlayerVerticalControll.cs"
 "Assets/Skript/SpawnManager.cs"
 -langversion:9.0
 

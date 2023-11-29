@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4062065787485274244}
   - component: {fileID: 8551464718261657592}
   - component: {fileID: 7691860465102540442}
-  - component: {fileID: 2872026198321681802}
   - component: {fileID: 5979456410227821714}
+  - component: {fileID: 2872026198321681802}
   - component: {fileID: 277905176231514727}
   m_Layer: 0
   m_Name: Food_Bone_01
@@ -115,6 +115,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBound: 7
   lowerBound: -20
+--- !u!114 &5979456410227821714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8672347242950678320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e2c4fcf32c9b4170ae2253e2d4f88e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &2872026198321681802
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -136,18 +148,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6528887, y: 0.12128265, z: 0.29866803}
   m_Center: {x: 0, y: 0.060641326, z: 0}
---- !u!114 &5979456410227821714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8672347242950678320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e2c4fcf32c9b4170ae2253e2d4f88e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &277905176231514727
 Rigidbody:
   m_ObjectHideFlags: 0

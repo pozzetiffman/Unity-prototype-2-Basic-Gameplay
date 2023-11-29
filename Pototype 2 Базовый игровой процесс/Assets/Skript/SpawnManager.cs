@@ -5,23 +5,16 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] animalPrefabs;
-    public float spawnRangeX = 20;
-    public float spawnPosZ = 20;
+    public float spawnRangeX = 0;
+    public float spawnPosZ = 0;
     public float startDelay = 2;
     public float spawnInterval = 1.5f;
-    //public int alnimalIndex;
+    
 
     private void Start()
     {
+        // безконечное повторения кода с функцией SpawnSpawnRandomAnimal, задержка, интервал
         InvokeRepeating("SpawnSpawnRandomAnimal", startDelay, spawnInterval);
-    }
-
-    private void Update()
-    {
-        //if (Input.GetKeyUp(KeyCode.S))
-        //{
-        //    SpawnSpawnRandomAnimal();
-        //}
     }
 
 
@@ -31,15 +24,10 @@ public class SpawnManager : MonoBehaviour
         int animalIndex = Random.Range(0, animalPrefabs.Length);
 
         // позиция префаба (позиция х - рандом от (spawnRangeX до spawnRangeX), позиция y - 0, позиция z - spawnPosZ)
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnPosZ), 0, spawnRangeX);
 
-        // создание префаба ( из массива по рандому, 
-        Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform);
-    }
-
-    private void Instantiate(GameObject gameObject, Vector3 spawnPos, Transform transform)
-    {
-        throw new System.NotImplementedException();
+        // создание префаба ( колл. из массива по рандому, позиция, вращение) полное копирование изхрдного префаба 
+        Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
     }
 }
 
