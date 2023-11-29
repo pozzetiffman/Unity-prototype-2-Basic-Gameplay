@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
-
+    // уничтожение обекта и тригера при сталкновении 
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);

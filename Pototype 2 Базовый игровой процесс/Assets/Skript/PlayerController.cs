@@ -10,9 +10,9 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-       
 
 
+        // если позиция привевышает - RangeX новая позиция остается прежней по всем осям 
         if (transform.position.x < -RangeX)
         {
             transform.position = new Vector3(-RangeX, transform.position.y, transform.position.z);
@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
             Vector3 posY = new Vector3(transform.position.x, 0.75f, transform.position.z);
 
             Instantiate(projectilePrefab, posY, projectilePrefab.transform.rotation);
-            
+
         }
     }
 
