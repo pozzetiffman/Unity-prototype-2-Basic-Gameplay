@@ -9,10 +9,12 @@ public class SpawnManager : MonoBehaviour
     public float spawnPosZ = 0;
     public float startDelay = 2;
     public float spawnInterval = 1.5f;
+    public int tes = 2;
     
 
     private void Start()
     {
+
         // безконечное повторения кода с функцией SpawnSpawnRandomAnimal, задержка, интервал
         InvokeRepeating("SpawnSpawnRandomAnimal", startDelay, spawnInterval);
     }

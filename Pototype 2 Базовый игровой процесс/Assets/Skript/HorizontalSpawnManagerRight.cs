@@ -10,7 +10,7 @@ public class HorizontalSpawnManagerRight : MonoBehaviour
     public float startDelay = 2;
     public float spawnInterval = 1.5f;
 
-
+    
     private void Start()
     {
         // безконечное повторения кода с функцией SpawnSpawnRandomAnimal, задержка, интервал
